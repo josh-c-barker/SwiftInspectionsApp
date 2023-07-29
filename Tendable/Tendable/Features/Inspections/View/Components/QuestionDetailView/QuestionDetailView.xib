@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionDetailView" customModule="Tendable" customModuleProvider="target">
+            <connections>
+                <outlet property="answerLabel" destination="WPL-r0-nGQ" id="XtR-BP-jbC"/>
+                <outlet property="answerTextField" destination="aYj-4o-OLA" id="MOk-z0-IQk"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="A6z-rw-dJa"/>
+                <outlet property="questionLabel" destination="iSM-oI-lp8" id="Ov9-hH-Hd9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-oI-lp8" userLabel="questionLabel">
+                    <rect key="frame" x="16" y="22" width="361" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYj-4o-OLA">
+                    <rect key="frame" x="180.66666666666666" y="80" width="32" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPL-r0-nGQ" userLabel="answerLabel">
+                    <rect key="frame" x="16" y="87" width="361" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X7-OC-1Nt">
+                    <rect key="frame" x="136.66666666666666" y="148" width="119.99999999999997" height="34"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="WxE-je-IS5"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save Answer"/>
+                    <connections>
+                        <action selector="saveAnswerPressed:" destination="-1" eventType="touchUpInside" id="Pcf-hP-t9X"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WPL-r0-nGQ" firstAttribute="leading" secondItem="iSM-oI-lp8" secondAttribute="leading" id="66F-VK-Rsc"/>
+                <constraint firstItem="aYj-4o-OLA" firstAttribute="centerX" secondItem="iSM-oI-lp8" secondAttribute="centerX" id="Emg-Bf-9ME"/>
+                <constraint firstItem="iSM-oI-lp8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="Xza-cd-sHu"/>
+                <constraint firstItem="iSM-oI-lp8" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-16" id="f7c-w4-DsH"/>
+                <constraint firstItem="aYj-4o-OLA" firstAttribute="top" secondItem="iSM-oI-lp8" secondAttribute="bottom" constant="37.666666666666671" id="gvb-zA-DEO"/>
+                <constraint firstItem="WPL-r0-nGQ" firstAttribute="top" secondItem="iSM-oI-lp8" secondAttribute="bottom" constant="44.666666666666671" id="hSg-uZ-P1k"/>
+                <constraint firstItem="WPL-r0-nGQ" firstAttribute="width" secondItem="iSM-oI-lp8" secondAttribute="width" id="kIU-Xo-3t3"/>
+                <constraint firstItem="iSM-oI-lp8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uu5-eT-0fN"/>
+                <constraint firstItem="5X7-OC-1Nt" firstAttribute="top" secondItem="WPL-r0-nGQ" secondAttribute="bottom" constant="40" id="zWE-ac-aeL"/>
+                <constraint firstItem="5X7-OC-1Nt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zt5-yd-3aa"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-115.26717557251908" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

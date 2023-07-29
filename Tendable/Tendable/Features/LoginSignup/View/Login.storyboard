@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Nav Controller-->
+        <scene sceneID="eAV-gF-sCh">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0aK-xx-lTo" customClass="LoginNavController" customModule="Tendable" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZFg-OE-ijg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HzN-jO-6zS" kind="relationship" relationship="rootViewController" id="vLm-OM-iDq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTv-cT-hVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="-132"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="C3O-b9-EaC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HzN-jO-6zS" customClass="LoginViewController" customModule="Tendable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="skZ-j8-WFv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6m-vu-RXP" customClass="UserDetailsView" customModule="Tendable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="131" width="393" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="HFb-64-XXx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW1-Hv-EIr">
+                                <rect key="frame" x="153" y="471" width="87" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="registerPressed:" destination="HzN-jO-6zS" eventType="touchUpInside" id="z6k-6H-yTe"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgr-y4-HQi">
+                                <rect key="frame" x="135" y="544" width="123" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Offline Mode"/>
+                                <connections>
+                                    <action selector="offlineModePressed:" destination="HzN-jO-6zS" eventType="touchUpInside" id="Nbz-Tb-wyT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fZ2-L3-059"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eW1-Hv-EIr" firstAttribute="centerX" secondItem="k6m-vu-RXP" secondAttribute="centerX" id="2i8-k5-w2y"/>
+                            <constraint firstItem="k6m-vu-RXP" firstAttribute="width" secondItem="skZ-j8-WFv" secondAttribute="width" id="AaA-uA-rH9"/>
+                            <constraint firstItem="k6m-vu-RXP" firstAttribute="top" secondItem="fZ2-L3-059" secondAttribute="top" constant="28" id="Afh-6i-zFr"/>
+                            <constraint firstItem="pgr-y4-HQi" firstAttribute="centerX" secondItem="fZ2-L3-059" secondAttribute="centerX" id="Itr-Xc-Pld"/>
+                            <constraint firstItem="pgr-y4-HQi" firstAttribute="top" secondItem="eW1-Hv-EIr" secondAttribute="bottom" constant="38" id="Mgv-cI-hyt"/>
+                            <constraint firstItem="k6m-vu-RXP" firstAttribute="centerX" secondItem="fZ2-L3-059" secondAttribute="centerX" id="ei2-7n-nqb"/>
+                            <constraint firstItem="eW1-Hv-EIr" firstAttribute="top" secondItem="k6m-vu-RXP" secondAttribute="bottom" constant="40" id="fHE-QE-9zQ"/>
+                            <constraint firstItem="eW1-Hv-EIr" firstAttribute="centerX" secondItem="fZ2-L3-059" secondAttribute="centerX" id="zKg-m6-T66"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8mg-VJ-MAh"/>
+                    <connections>
+                        <outlet property="offlineModeButton" destination="pgr-y4-HQi" id="1Zk-T6-5Dv"/>
+                        <outlet property="userDetailsView" destination="k6m-vu-RXP" id="nDz-JZ-IUW"/>
+                        <segue destination="QGA-cw-uSY" kind="show" identifier="showRegisterView" id="I45-0M-ohd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGn-ib-ZEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-132"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="6z8-8f-svs">
+            <objects>
+                <viewController id="QGA-cw-uSY" customClass="RegisterViewController" customModule="Tendable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Gy-pE-EzC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNj-NG-j1A" customClass="UserDetailsView" customModule="Tendable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="HQE-H8-lSx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tf5-aW-UmC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yNj-NG-j1A" firstAttribute="centerX" secondItem="tf5-aW-UmC" secondAttribute="centerX" id="NMj-rR-XQt"/>
+                            <constraint firstItem="yNj-NG-j1A" firstAttribute="top" secondItem="tf5-aW-UmC" secondAttribute="top" id="gbj-D6-ALA"/>
+                            <constraint firstItem="yNj-NG-j1A" firstAttribute="width" secondItem="2Gy-pE-EzC" secondAttribute="width" id="qVG-U1-aZU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f64-wW-aGU"/>
+                    <connections>
+                        <outlet property="userDetailsView" destination="yNj-NG-j1A" id="xf3-ok-WBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sz-tf-xiV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="-120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

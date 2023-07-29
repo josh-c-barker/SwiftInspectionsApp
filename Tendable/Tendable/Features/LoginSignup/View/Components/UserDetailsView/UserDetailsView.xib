@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailsView" customModule="Tendable" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="GEg-fG-nWi" id="4wq-7c-BZe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="pJk-b2-Qnr"/>
+                <outlet property="emailField" destination="RDk-tu-Cij" id="kie-z3-pft"/>
+                <outlet property="passwordField" destination="EpB-tA-vmc" id="Pim-hJ-PJb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Og7-c5-Kcs">
+                    <rect key="frame" x="176" y="27" width="41" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDk-tu-Cij" userLabel="emailField">
+                    <rect key="frame" x="49" y="68" width="295" height="28.666666666666671"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-tA-vmc" userLabel="passwordField">
+                    <rect key="frame" x="49" y="178.66666666666666" width="295" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEg-fG-nWi">
+                    <rect key="frame" x="158" y="257" width="75" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="JJ2-0s-Rlt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1e-zc-IYC">
+                    <rect key="frame" x="159.66666666666666" y="134.66666666666666" width="74" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Og7-c5-Kcs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="2V1-S0-sQz"/>
+                <constraint firstItem="EpB-tA-vmc" firstAttribute="top" secondItem="D1e-zc-IYC" secondAttribute="bottom" constant="23" id="7Vy-1p-5Ly"/>
+                <constraint firstItem="RDk-tu-Cij" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="RcM-Y5-llA"/>
+                <constraint firstItem="RDk-tu-Cij" firstAttribute="top" secondItem="Og7-c5-Kcs" secondAttribute="bottom" constant="20" id="Whf-Cd-pMF"/>
+                <constraint firstItem="D1e-zc-IYC" firstAttribute="centerX" secondItem="RDk-tu-Cij" secondAttribute="centerX" id="agJ-66-DT5"/>
+                <constraint firstItem="EpB-tA-vmc" firstAttribute="width" secondItem="RDk-tu-Cij" secondAttribute="width" id="f2H-Gi-Prq"/>
+                <constraint firstItem="Og7-c5-Kcs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pAi-8h-8qk"/>
+                <constraint firstItem="D1e-zc-IYC" firstAttribute="top" secondItem="RDk-tu-Cij" secondAttribute="bottom" constant="38" id="vbW-HC-2lI"/>
+                <constraint firstItem="EpB-tA-vmc" firstAttribute="centerX" secondItem="D1e-zc-IYC" secondAttribute="centerX" id="yTb-r2-j0m"/>
+                <constraint firstItem="RDk-tu-Cij" firstAttribute="centerX" secondItem="Og7-c5-Kcs" secondAttribute="centerX" id="zIy-iB-2X0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-63.358778625954194" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

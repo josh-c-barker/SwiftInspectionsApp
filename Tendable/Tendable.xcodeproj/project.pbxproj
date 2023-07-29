@@ -53,11 +53,8 @@
 		5D8673BA2A642EA500C84272 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673B92A642EA500C84272 /* UserManager.swift */; };
 		5D8673CA2A645C7100C84272 /* APIManagerMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673C92A645C7100C84272 /* APIManagerMockTest.swift */; };
 		5D8673D62A64636900C84272 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8673D52A64636900C84272 /* Mocker */; };
-		5D8673DC2A654CB400C84272 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673DB2A654CB400C84272 /* CoreDataStack.swift */; };
-		5D8673DD2A654CBC00C84272 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673DB2A654CB400C84272 /* CoreDataStack.swift */; };
 		5D8673E02A65609900C84272 /* MultipleInspectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673DF2A65609900C84272 /* MultipleInspectionsView.swift */; };
 		5D8673E22A6560A700C84272 /* MultipleInspectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8673E12A6560A700C84272 /* MultipleInspectionsView.xib */; };
-		5D8673E42A65639F00C84272 /* APINewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8673E32A65639F00C84272 /* APINewManager.swift */; };
 		5DBBBC412A5AE0CA0057A686 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBBC3F2A5AE0CA0057A686 /* QuestionTableViewCell.swift */; };
 		5DBBBC422A5AE0CA0057A686 /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DBBBC402A5AE0CA0057A686 /* QuestionTableViewCell.xib */; };
 		5DBBBC442A5AE4EC0057A686 /* InspectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBBC432A5AE4EC0057A686 /* InspectionManager.swift */; };
@@ -146,10 +143,8 @@
 		5D7505212A599589009F9388 /* QuestionsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsTableView.xib; sourceTree = "<group>"; };
 		5D8673B92A642EA500C84272 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		5D8673C92A645C7100C84272 /* APIManagerMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerMockTest.swift; sourceTree = "<group>"; };
-		5D8673DB2A654CB400C84272 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5D8673DF2A65609900C84272 /* MultipleInspectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleInspectionsView.swift; sourceTree = "<group>"; };
 		5D8673E12A6560A700C84272 /* MultipleInspectionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleInspectionsView.xib; sourceTree = "<group>"; };
-		5D8673E32A65639F00C84272 /* APINewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINewManager.swift; sourceTree = "<group>"; };
 		5DBBBC3F2A5AE0CA0057A686 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		5DBBBC402A5AE0CA0057A686 /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
 		5DBBBC432A5AE4EC0057A686 /* InspectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionManager.swift; sourceTree = "<group>"; };
@@ -421,8 +416,6 @@
 			children = (
 				5D7504F42A572EDE009F9388 /* APIManager.swift */,
 				5D8673B92A642EA500C84272 /* UserManager.swift */,
-				5D8673DB2A654CB400C84272 /* CoreDataStack.swift */,
-				5D8673E32A65639F00C84272 /* APINewManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -770,7 +763,6 @@
 				5D7505132A599188009F9388 /* SurveyTypeModal.swift in Sources */,
 				5D7505002A582463009F9388 /* UserDetailsView.swift in Sources */,
 				5D226B622A5AC6930058ACB2 /* TCViewController.swift in Sources */,
-				5D8673DC2A654CB400C84272 /* CoreDataStack.swift in Sources */,
 				5D75051E2A59955B009F9388 /* QuestionsTableView.swift in Sources */,
 				5D7504FD2A5823BD009F9388 /* LoginViewController.swift in Sources */,
 				5D8673BA2A642EA500C84272 /* UserManager.swift in Sources */,
@@ -779,7 +771,6 @@
 				5D7504C22A572D52009F9388 /* ViewController.swift in Sources */,
 				5D7504BE2A572D52009F9388 /* AppDelegate.swift in Sources */,
 				5D75050D2A598D25009F9388 /* InspectionModel.swift in Sources */,
-				5D8673E42A65639F00C84272 /* APINewManager.swift in Sources */,
 				5DBBBC442A5AE4EC0057A686 /* InspectionManager.swift in Sources */,
 				5D7505112A59910F009F9388 /* InspectionTypeModel.swift in Sources */,
 				5DBBBC472A5AE7C60057A686 /* QuestionsViewModel.swift in Sources */,
@@ -813,7 +804,6 @@
 				5D8673CA2A645C7100C84272 /* APIManagerMockTest.swift in Sources */,
 				5D4067EA2A75481E00C664BE /* InspectionManager.swift in Sources */,
 				5DBBBC6E2A5C481D0057A686 /* AreaModel.swift in Sources */,
-				5D8673DD2A654CBC00C84272 /* CoreDataStack.swift in Sources */,
 				5DBBBC6C2A5C481D0057A686 /* SurveyTypeModal.swift in Sources */,
 				5DBBBC662A5C46FF0057A686 /* APIManagerTest.swift in Sources */,
 				5D4067EC2A7548BF00C664BE /* AppDelegate.swift in Sources */,
